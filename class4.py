@@ -14,7 +14,7 @@ print(100//23.4)
 #Exponensial opeartor
 print(5**3)
 
-#Assignment operators +=,-=,/=,*=,//=,**=
+#Assignment operators =, +=,-=,/=,*=,//=,**=
 a=30
 print(a)
 
