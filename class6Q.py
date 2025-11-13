@@ -30,4 +30,13 @@ if year % 100 == 0 and year % 400 == 0:
 elif year % 100 != 0 and year % 4 == 0:
     print("Leap year:")
 else:
-    print("Simple year")        
+    print("Simple year") 
+
+#4. vowel and consonent 
+
+ch = input("Enter any alphabet :-")
+
+if ch in "aeiouAEIOU":
+    print("Vowel")
+else :
+    print("Consonent")    
