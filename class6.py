@@ -14,3 +14,7 @@ if money >=2000:
     pass
 else:
     print("Money is lessthan 2000")
+
+#3 turnary operator in py
+
+print("Voter ") if age>=18 else print("Not voter")    
