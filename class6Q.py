@@ -59,10 +59,22 @@ else:
 
 # 7.Number Range Checker
 
-# write your code here
+
 num1 = int(input())
 
 if num1>=1 and num1<=100:
     print("Within Range")
 else:
-    print("Out of Range")    
+    print("Out of Range") 
+
+# 8.Reverse Digits Output
+
+str = input()
+
+if str[0] == '-':
+    print(-int(str[:0:-1]))
+else:
+    print(int(str[::-1]))
+
+
+
