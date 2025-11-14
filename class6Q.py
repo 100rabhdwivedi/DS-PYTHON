@@ -76,5 +76,18 @@ if str[0] == '-':
 else:
     print(int(str[::-1]))
 
+# 9.Print the Middle Character of a String
+
+str = input()
+
+length = len(str)
+
+if length==0:
+    print("No character found")
+elif length%2 ==0 :    
+    print(str[(length//2)-1])
+else:
+    print(str[length//2])    
+
 
 
