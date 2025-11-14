@@ -40,3 +40,11 @@ if ch in "aeiouAEIOU":
     print("Vowel")
 else :
     print("Consonent")    
+
+#5.Check for 'a' in String
+str = input()
+
+if 'a' in str:
+    print("a found")
+else:
+    print("a not found")    
