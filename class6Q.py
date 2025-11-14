@@ -56,3 +56,13 @@ if num%7 ==0 :
     print("Multiple of 7")
 else:
     print("Not a multiple of 7")
+
+# 7.Number Range Checker
+
+# write your code here
+num1 = int(input())
+
+if num1>=1 and num1<=100:
+    print("Within Range")
+else:
+    print("Out of Range")    
