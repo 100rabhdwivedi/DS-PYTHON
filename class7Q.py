@@ -1,33 +1,30 @@
-#1. sum of 1 to n
+# 1. Sum of 1 to n
+n1 = int(input("Enter a number till where you want to add- "))
+s = 0
+for i in range(n1, 0, -1):
+    s += i
+print(f"Sum of 1 to {n1} = {s}") 
 
-n= int(input("Enter a number till where you want to add-"))
 
-s=0
-
-for i in range(n,0,-1):
-    s+=i
-print(f"Sum of 1 to n= {s}") 
-
-# 2.Factorial of a number
-
-n = int(input("Enter a number that's factorial you want:"))
+# 2. Factorial
+n2 = int(input("Enter a number whose factorial you want: "))
 fact = 1
+for i in range(1, n2 + 1):
+    fact *= i
+print("Factorial =", fact)
 
-for i in range(1,n):
-    fact*=i
-print("Factorial = ",fact)    
 
-#3. sum of even and odd seperately
+# 3. Even & Odd sum
+n3 = int(input("Enter the number till where you want to get even or odd sum- "))
 
-n = int(input("Enter the number till where you want to get even or odd sum-"))
+esum = 0
+odsum = 0
 
-esum=0
-odsum=0
-
-for i in range(1,n):
-    if i%2==0:
-        esum+=i
+for i in range(1, n3 + 1):
+    if i % 2 == 0:
+        esum += i
     else:
-        odsum+=i    
-print(f"Even sum = {esum}")   
-print(f"Odd sum = {odsum}")     
+        odsum += i
+
+print("Even sum =", esum)
+print("Odd sum =", odsum)
