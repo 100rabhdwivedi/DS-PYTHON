@@ -21,3 +21,14 @@ while i<12:
 else:
     print("Printed the table")
 
+#1. Print the first digit of a number like 145 -> 1
+
+n= int(input("Enter a number :"))
+num = n
+ans =0
+
+while n>0:
+    ans = n%10
+    n = n//10
+print(f"First digit of {num} is {ans}")    
+
