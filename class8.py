@@ -30,5 +30,16 @@ ans =0
 while n>0:
     ans = n%10
     n = n//10
-print(f"First digit of {num} is {ans}")    
+print(f"First digit of {num} is {ans}")
+
+#2. Print a reverse of a number like 451 -> 154
+
+n1 = int(input("Enter a number :"))
+rev = 0
+
+while n1>0:
+    rev = rev *10 + n1%10
+    n1//=10
+
+print("Reverse =",rev)
 
