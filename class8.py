@@ -43,3 +43,31 @@ while n1>0:
 
 print("Reverse =",rev)
 
+# 3.Automorphic number
+
+num = int(input("Enter a number to check automorphic: "))
+
+copy = num
+square = num ** 2
+count = 0
+
+while num > 0:
+    count += 1
+    num //= 10
+
+dig = 0
+while count != 0:
+    dig = dig * 10 + square % 10
+    square //= 10
+    count -= 1
+
+rev = 0
+while dig > 0:
+    rev = rev * 10 + dig % 10
+    dig //= 10
+
+if rev == copy:
+    print("Automorphic")
+else:
+    print("Simple")
+    
