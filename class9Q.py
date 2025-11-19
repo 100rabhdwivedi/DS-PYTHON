@@ -28,3 +28,12 @@ def check_even(num):
     pass
 
 print(check_even(30))
+
+#Multiplication table 
+
+def print_table(n):
+    # Write your code here
+    for i in range (1,11):
+        print(f"{n} x {i} = {n*i}")
+num = int(input("Enter a number for table :"))        
+print_table(num)        
