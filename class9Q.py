@@ -16,3 +16,15 @@ def check_number_sign(num):
     else :
         return "Zero"
 print(check_number_sign(20))  
+
+#Check even and odd 
+
+def check_even(num):
+    # Write your code here
+    if num %2 == 0:
+        return "Even"
+    else :
+        return "Odd"
+    pass
+
+print(check_even(30))
