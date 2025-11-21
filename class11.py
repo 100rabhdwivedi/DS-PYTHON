@@ -40,3 +40,14 @@ lis2 = copy.deepcopy(lis1)
 lis2[3]=40
 
 print(lis1,lis2)
+
+#list traversing method1
+
+for i in lis1:
+    print(i)
+
+print("Second method \n")
+#list traversing method2
+
+for i in range(len(lis1)):
+    print(lis1[i])    
