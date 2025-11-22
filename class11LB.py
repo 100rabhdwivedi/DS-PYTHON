@@ -82,3 +82,19 @@ for i in range (len(list6)//2):
         list6[len(list6)-1-i] = temp
 
 print(list6)
+
+#7. leaner search 
+
+arr = [1,2,3,5,87,56,8]
+
+elem = int(input("Enter a element that you want to find"))
+index = -0
+
+for i in range(len(arr)):
+
+    if elem == arr[i]:
+        index = i
+        print(f"Element found in index {index} :")
+        break
+else :
+    print("Element not found in list")
