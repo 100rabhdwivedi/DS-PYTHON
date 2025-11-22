@@ -32,10 +32,41 @@ for i in range (len(list3)):
         smax = fmax
         fmax = list3[i]
         
-    if list3[i]<fmax and list3[i]>smax:
+    if list3[i]<=fmax and list3[i]>smax:
         smax = list3[i]    
 
     
 
 print("First max element =",fmax)
 print("Second max element =",smax)
+
+#4. verify list is sorted 
+
+list4 = [1,5,5,5]
+
+verify = True 
+
+for i in range (len(list4)-1):
+    if list4[i]>list4[i+1]:
+        verify = False
+        break
+
+if verify == True:
+    print("List is sorted")
+else:
+    print("List is not sorted")    
+
+#5. left rotaion by one element       
+
+list5 = [20,30,40,50,60]
+
+
+
+for i in range (len(list5)-1):
+    temp = list5[i+1]
+    list5[i+1] = list5[i]
+    list5[i] = temp
+
+    # list5[i],list5[i+1] = list5[i+1],list5[i]
+
+print(list5)    
