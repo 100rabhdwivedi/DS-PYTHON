@@ -50,4 +50,9 @@ print("Second method \n")
 #list traversing method2
 
 for i in range(len(lis1)):
-    print(lis1[i])    
+    print(lis1[i])  
+
+#list traversing method3
+
+for index,value in enumerate(lis2):
+    print(f"value of {index} = {value} ")      
