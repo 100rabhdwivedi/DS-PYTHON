@@ -19,3 +19,23 @@ for i in range (len(list2)):
         max = list2[i]
 
 print("Max value =",max)
+
+#3. find the second  greatest number 
+
+list3 = [567,4567]
+
+fmax = list3[0]
+smax = list3[1]
+
+for i in range (len(list3)):
+    if fmax < list3[i]:
+        smax = fmax
+        fmax = list3[i]
+        
+    if list3[i]<fmax and list3[i]>smax:
+        smax = list3[i]    
+
+    
+
+print("First max element =",fmax)
+print("Second max element =",smax)
