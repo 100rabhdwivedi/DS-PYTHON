@@ -70,3 +70,15 @@ for i in range (len(list5)-1):
     # list5[i],list5[i+1] = list5[i+1],list5[i]
 
 print(list5)    
+
+#6. Reverse a list without using extra space 
+
+list6 = [1,2,4,5,6,3]
+
+for i in range (len(list6)//2):
+    if i < len(list6)-i:
+        temp = list6[i]
+        list6[i] = list6[len(list6)-1-i]
+        list6[len(list6)-1-i] = temp
+
+print(list6)
