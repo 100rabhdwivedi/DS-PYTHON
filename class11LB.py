@@ -132,5 +132,16 @@ for i in range (len(lis)-1):
 
 print(lis)
 
+#Selection sort
 
+list = [1,4,2,6,5,8]
 
+for i in range(len(list)-1):
+    small = i
+    for j in range (i+1, len(list)):
+        if(list[small] > list[j]):
+            small = j
+
+    list[small], list[i] = list[i], list[small]
+
+print(list)
