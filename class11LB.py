@@ -83,7 +83,7 @@ for i in range (len(list6)//2):
 
 print(list6)
 
-#7. leaner search 
+#7. linear search 
 
 arr = [1,2,3,5,87,56,8]
 
@@ -98,3 +98,39 @@ for i in range(len(arr)):
         break
 else :
     print("Element not found in list")
+
+#8.binary search
+
+arr1 = [1,2,3,4,5,6]
+
+elem1 = int(input("Enter a number that you want to find :"))
+
+length = len(arr1)
+start = 0
+end = length-1
+
+while(start<=end):
+    mid = (start+end)//2
+    if elem1 == arr1[mid]:
+        print("Find the element at index =",mid)
+        break  
+    elif elem1 > arr1[mid]:
+        start = mid+1
+    else:
+        end = mid-1
+
+#Bubble sort 
+
+lis = [20,10,50,30,66,44,34,67,234,87,45,47]    
+
+for i in range (len(lis)-1):
+    for j in range(i,len(lis)):
+        if lis[i]>lis[j]:
+            temp = lis[j]
+            lis[j] = lis[i]
+            lis[i]=temp
+
+print(lis)
+
+
+
