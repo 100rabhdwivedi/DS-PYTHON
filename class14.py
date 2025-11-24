@@ -19,3 +19,11 @@ dic[1] = 1000
 
 print(dic)
 print(dic1,dic1[True])
+
+#Traversing in dictonary
+
+for item in dic.values():
+    print(item)
+
+for key in dic1:
+    print(key,dic1[key])    
