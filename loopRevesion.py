@@ -19,4 +19,20 @@ for i in range(1, n+1):
         if is_prime(root):
             print(i, end=" ")
 
-            
+#2. Armstrong number 
+
+# write your code here 
+
+n = int(input())
+
+temp = n
+sum = 0
+while temp> 0 :
+    ldigit = temp % 10
+    sum+=(ldigit**3)
+    temp //=10
+
+if (sum == n):
+    print("Armstrong")
+else:
+    print("Not Armstrong")           
