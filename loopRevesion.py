@@ -35,4 +35,20 @@ while temp> 0 :
 if (sum == n):
     print("Armstrong")
 else:
-    print("Not Armstrong")           
+    print("Not Armstrong") 
+
+#Print factors of a number 
+
+# write your code here
+
+n = int(input())
+
+if n == 1:
+    print(1)
+    exit()
+
+print(1,end=" ")
+for i in range(2,(n//2)+1):
+    if n % i == 0:
+        print(i,end=" ")
+print(n,end=" ")                  
