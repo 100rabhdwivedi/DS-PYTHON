@@ -72,3 +72,10 @@ if count == len(str1)  :
     print("Anagram")
 else:
     print("Not Anagram")
+
+#5. print perfect square
+a,b = map(int,input().split())
+
+for i in range(a,b+1):
+    if i == int(i**0.5)*int(i**0.5):
+        print(i,end=" ")    
