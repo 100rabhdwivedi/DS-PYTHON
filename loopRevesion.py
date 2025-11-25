@@ -37,7 +37,7 @@ if (sum == n):
 else:
     print("Not Armstrong") 
 
-#Print factors of a number 
+#3.Print factors of a number 
 
 # write your code here
 
@@ -51,4 +51,24 @@ print(1,end=" ")
 for i in range(2,(n//2)+1):
     if n % i == 0:
         print(i,end=" ")
-print(n,end=" ")                  
+print(n,end=" ")     
+
+# 4. Anargams 
+
+# write your code here
+str1 = input()
+str2 = input()
+
+count = 0
+if len(str1) != len(str2):
+    print("Not Anagram")
+    exit()
+
+for i in  range(len(str1)):
+    if str1[i] in str2 and str2[i] in str1  :
+        count+=1
+        
+if count == len(str1)  :
+    print("Anagram")
+else:
+    print("Not Anagram")
