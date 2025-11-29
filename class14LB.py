@@ -57,4 +57,17 @@ class Solution(object):
         if len(dec.keys())==26:
             return True
         else :
-            return False                  
+            return False  
+
+#leetcode problem 2351
+
+class Solution(object):
+    def repeatedCharacter(self, s):
+        dec = {}
+
+        for i in s:
+            if(dec.get(i)==1):
+                return i
+            else:
+                dec[i] = 1  
+                               
