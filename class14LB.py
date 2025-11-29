@@ -70,4 +70,20 @@ class Solution(object):
                 return i
             else:
                 dec[i] = 1  
-                               
+
+#leetcode problem 1748
+
+class Solution(object):
+    def sumOfUnique(self, nums):
+        dic = {}
+        sum=0
+        for i in nums:
+            if i in dic.keys():
+                dic[i]+=1
+            else:
+                dic[i] = 1
+        for i in dic:
+            if(dic[i]==1):
+                sum+=i            
+        return sum
+                                        
