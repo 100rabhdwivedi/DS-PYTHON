@@ -39,4 +39,22 @@ class Solution(object):
        for i in jewels:
             if i in dic:
                 count+=dic[i] 
-       return count       
+       return count  
+
+#leetcode problem 1832
+
+class Solution(object):
+    def checkIfPangram(self, sentence):
+        dec = {
+
+        }
+        
+        for i in sentence:
+            if i in dec.keys():
+                dec[i]+=1
+            else:
+                dec[i] = 1
+        if len(dec.keys())==26:
+            return True
+        else :
+            return False                  
