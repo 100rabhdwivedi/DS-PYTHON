@@ -1,6 +1,7 @@
 '''
 Lambda function ,
-map , filter , zip
+map , filter , zip,
+list, set, dictionary comprehension
 '''
 
 #Creating a lambda function 
@@ -34,3 +35,27 @@ map , filter , zip
 # comb = list(zip(name,age))
 
 # print(comb)
+
+#List comprehension
+
+# chairsCount = [1,2,3,4,5,6,10,18,30,22,6,3,4]
+
+# count = [i for i in chairsCount if i> 10] 
+# print("Count = ",count)
+
+#Set comprehension
+
+# chairsCount = [1,2,3,5,6,10,20,20,40,38,39,38,50]
+
+# count = {i for i in chairsCount if i > 10}
+# print("Count =",count)
+
+#dic comprehension
+
+# chairsCount = [1,2,3,5,6,10,20,20,40,38,39,38,50]
+
+# squareCount = {i:i**2 for i in chairsCount if i > 10}
+# print("Count =",squareCount)
+
+
+
