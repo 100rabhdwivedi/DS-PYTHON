@@ -1,7 +1,8 @@
 '''
 Lambda function ,
 map , filter , zip,
-list, set, dictionary comprehension
+list, set, dictionary comprehension,
+decorator
 '''
 
 #Creating a lambda function 
@@ -58,4 +59,30 @@ list, set, dictionary comprehension
 # print("Count =",squareCount)
 
 
+#decorator
 
+def decorator(func):
+    def wrapper():
+        print("*********")
+        func()
+        print("*********")
+    return wrapper
+
+@decorator
+def greeting():
+    print("Welcome")
+
+greeting()
+
+def decorator2(func):
+    def wrapper(a,b):
+        print("*********")
+        func(a,b)
+        print("*********")
+    return wrapper
+
+@decorator2
+def addition(a,b):
+    print(a+b)
+
+addition(10,20)
