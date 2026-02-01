@@ -36,3 +36,21 @@ m1.simple_mes()
 Decor.show_type()
 Decor.simple_mes()
 
+
+class Student:
+
+    def __init__(self,name,age,phone):
+        self.name = name
+        self.age = age
+        self.phone = phone
+
+    def info(self):
+        print(f"Name:{self.name},Age:{self.age},Phone:{self.phone}")
+
+s1 = Student("saurabh",21,9090678767)
+s2 = Student("anay",22,8967456787)
+s3 = Student("babu",28,7654879078)
+
+s1.info()
+s2.info()
+s3.info()
