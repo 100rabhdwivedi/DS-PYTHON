@@ -1,0 +1,13 @@
+{
+    "books": [
+        {
+            "id": "BSWDK7",
+            "name": "ttt",
+            "author": "rrrrr",
+            "stock": 56,
+            "available_stock": 56,
+            "created_at": "04-02-2026 10:04:58"
+        }
+    ],
+    "members": []
+}
