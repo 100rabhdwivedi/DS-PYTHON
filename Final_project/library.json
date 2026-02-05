@@ -7,7 +7,31 @@
             "stock": 56,
             "available_stock": 56,
             "created_at": "04-02-2026 10:04:58"
+        },
+        {
+            "id": "BJBFH7",
+            "name": "python",
+            "author": "saurabh",
+            "stock": 423,
+            "available_stock": 423,
+            "created_at": "05-02-2026 09:06:21"
+        },
+        {
+            "id": "BNUOEN",
+            "name": "dsa",
+            "author": "ben",
+            "stock": 2,
+            "available_stock": 2,
+            "created_at": "05-02-2026 09:09:12"
         }
     ],
-    "members": []
+    "members": [
+        {
+            "id": "MN35Q1",
+            "name": "saurabh",
+            "email": "dwivedi100rabhh@gmail.com",
+            "borrowed_books": [],
+            "created_at": "05-02-2026 09:24:33"
+        }
+    ]
 }
