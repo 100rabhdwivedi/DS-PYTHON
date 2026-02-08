@@ -96,7 +96,7 @@ class Library:
         member_id = input("Enter member id:")
         members_data = Library.data['members']
 
-        member = next(filter(lambda m : m.id == member_id,members_data),None)
+        member = next(filter(lambda m : m["id"] == member_id,members_data),None)
 
         if not member :
             print("No such member found:")
@@ -106,12 +106,57 @@ class Library:
         book_id = input("Enter book id:")
         books_data = Library.data['books']
 
-        book = next(filter(lambda b : b.id == book_id,books_data),None)
+        book = next(filter(lambda b : b['id'] == book_id,books_data),None)
         if not book :
             print("No such book found:")
             return
 
+        elif(book['available_stock']<=0):
+            print("No books are available to be borrowed :")
+            return 
+        else :
 
+            book_data = {
+                "id":book_id,
+                "name":book['name'],
+                "borrowed_date":datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+            }
+
+
+            book['available_stock'] -=1
+            member['borrowed_books'].append(book_data)
+            Library.save_data() 
+
+    def return_book(self):
+        member_id = input("Enter member id:")
+        members_data = Library.data['members']
+
+        member = next(filter(lambda m : m["id"] == member_id,members_data),None)
+
+        if not member :
+            print("No such member found:")
+            return
+
+        
+        book_id = input("Enter book id:")
+        books_data = Library.data['books']
+
+        book = next(filter(lambda b : b['id'] == book_id,books_data),None)
+        if not book :
+            print("No such book found:")
+            return
+        
+        elif not member['borrowed_books']:
+            print("No book has been  borrowed :")
+            return
+        
+        book['available_stock'] +=1
+
+        books_after_return = list(filter(lambda b : b["id"] != book_id,member['borrowed_books']))
+
+        member['borrowed_books'] = books_after_return
+        Library.save_data()
+        
 
 print("="*50)
 print("Welcome to library management system")
@@ -144,3 +189,5 @@ elif choice == 4:
 elif choice == 5:
     l1.borrow_book()        
 
+elif choice == 6:
+    l1.return_book()

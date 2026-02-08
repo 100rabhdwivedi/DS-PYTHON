@@ -23,6 +23,14 @@
             "stock": 2,
             "available_stock": 2,
             "created_at": "05-02-2026 09:09:12"
+        },
+        {
+            "id": "BHGTDZ",
+            "name": "Daa",
+            "author": "g bala swami",
+            "stock": 2,
+            "available_stock": 2,
+            "created_at": "08-02-2026 09:41:25"
         }
     ],
     "members": [
@@ -32,6 +40,13 @@
             "email": "dwivedi100rabhh@gmail.com",
             "borrowed_books": [],
             "created_at": "05-02-2026 09:24:33"
+        },
+        {
+            "id": "MLA574",
+            "name": "Harbindar",
+            "email": "hani123@gmail.com",
+            "borrowed_books": [],
+            "created_at": "08-02-2026 09:41:53"
         }
     ]
 }
