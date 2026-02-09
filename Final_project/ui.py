@@ -246,3 +246,5 @@ elif menu == "Return Book":
                 book["available_stock"] += 1
                 lib.save()
                 st.success("Book returned successfully")
+
+#streamlit run filename.py
